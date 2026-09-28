@@ -267,6 +267,15 @@ main { min-width: 0; padding: 3.4rem 3rem 6rem; }
 .callout--wine { border-left-color: var(--wine); background: var(--wine-tint); }
 .callout--wine strong { color: var(--wine); }
 
+/* Dentro do banner em gradiente (tut-header), qualquer variante de callout
+   vira um quadro translúcido branco — senão os tons claros somem no fundo colorido */
+.tut-header .callout {
+  background: rgba(255, 255, 255, 0.16);
+  border-left-color: #fff;
+  color: rgba(255, 255, 255, 0.92);
+}
+.tut-header .callout strong { color: #fff; }
+
 .tut-footer-nav { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.4rem; padding-top: 1.6rem; border-top: 1px solid var(--line); }
 .tut-footer-nav a { text-decoration: none; color: var(--ink); font-size: 0.92rem; max-width: 45%; }
 .tut-footer-nav .dir { display: block; color: var(--ink-soft); font-size: 0.78rem; margin-bottom: 0.2rem; }
